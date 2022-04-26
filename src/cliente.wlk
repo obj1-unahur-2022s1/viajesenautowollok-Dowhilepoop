@@ -11,7 +11,6 @@ object ludmila {
 
 object anaMaria {
 	
-//return 30  si está económicamente estable, return 25 pesos el kilómetro en caso contrario. Se sabe en cada momento si Ana María está o no económicamente estable.
 	var economicamenteEstable = true
 	
 	method noEstable() {economicamenteEstable = false}
@@ -29,8 +28,6 @@ object anaMaria {
 }
 
 object teresa {
-	
-//arranca en 22 pesos el kilómetro, puede cambiar a cualquier otro valor
 
 	var precio = 22
 	
@@ -42,7 +39,6 @@ object teresa {
 }
 
 object melina {
-//El precio por kilómetro pactado con Melina es 3 pesos menos que el precio de la clienta para quien esté trabajando en cada momento.
 
   var melinaRemplazaA 
  
