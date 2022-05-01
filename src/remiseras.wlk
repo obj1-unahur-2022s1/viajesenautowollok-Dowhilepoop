@@ -9,20 +9,17 @@ object roxana {
 }
 
 object gabriela {
+  /* Para sumar un % a un valor podes multiplicar directamente al valor * 1.%  */
   method precioViaje(cliente, kms) { 
-		return (cliente.precioPactadoPorKm() * kms) + ((cliente.precioPactadoPorKm() * kms) * 0.20)
+		return cliente.precioPactadoPorKm() * kms * 1.2
 	}
 }
 
 
 object mariela {
   method precioViaje(cliente, kms) {
-    if ((cliente.precioPactadoPorKm() * kms) < 50) {
-      return 50
-    } 
-    else {
-      return cliente.precioPactadoPorKm() * kms
-    } 
+  	/*Aca tenias que  usar el max() */
+  	return 50.max(cliente.precioPactadoPorKm() * kms)
   }
 }
 

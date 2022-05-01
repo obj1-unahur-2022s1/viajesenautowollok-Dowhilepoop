@@ -10,13 +10,13 @@ object ludmila {
 }
 
 object anaMaria {
-	
+	/* Falto el método para volver a poner economicamenteEstable=true
+	 * Podias hacer uno que le pases el booleano y cambie el valor de atributo
+	 */	
 	var economicamenteEstable = true
 	
-	method noEstable() {economicamenteEstable = false}
+	method economicamenteEstable(unValor) {economicamenteEstable = unValor}
 	
-	method esEstable() {return economicamenteEstable }
-
 	method precioPactadoPorKm() {
 		if (economicamenteEstable) {
 			return 30

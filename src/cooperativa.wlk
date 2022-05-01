@@ -20,11 +20,10 @@ object oficina {
 	method cambiarSegundoRemiseraPor(remisera) {segundaOpcion = remisera}
 	
 	method intercambiarRemiseras() {
-		var auxiliar
-    
-    	auxiliar = primeraOpcion
-   		primeraOpcion = segundaOpcion
-    	segundaOpcion = auxiliar
+		/*
+		 * Aca lo mas fácil era llamar al método self.asignarRemiseras(r2,r1)
+		 */
+		self.asignarRemiseras(segundaOpcion, primeraOpcion)
 	}
 	
 	method remiseraPrimeraOpcion() { return  primeraOpcion }
